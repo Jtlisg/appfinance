@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Tarjeta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contenido">
+        <h1>Detalles de la Tarjeta</h1>
+
+        <div id="tarjeta-detalles">
+            <h2 id="nombre-tarjeta-detalle"></h2>
+            <p>Fecha de Creación: <span id="fecha-creacion"></span></p>
+            <p>Saldo Disponible: <span id="saldo-disponible"></span></p>
+
+            <h3>Movimientos</h3>
+            <ul id="movimientos-list"></ul>
+
+            <button id="agregar-movimiento">Agregar Movimiento</button>
+        </div>
+
+        <div id="formulario-movimiento" class="oculto">
+            <h2>Agregar Movimiento</h2>
+            <form id="form-movimiento">
+                <label for="nombre-movimiento">Nombre del Movimiento</label>
+                <input type="text" id="nombre-movimiento" required placeholder="Ej: Compra de alimentos">
+
+                <label for="fecha-movimiento">Fecha</label>
+                <input type="date" id="fecha-movimiento" required>
+
+                <label for="valor-movimiento">Valor</label>
+                <input type="number" id="valor-movimiento" required placeholder="Ej: -500">
+
+                <label for="tipo-movimiento">Tipo de Movimiento</label>
+                <select id="tipo-movimiento" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="salida">Salida</option>
+                </select>
+
+
+                <button type="submit">Guardar Movimiento</button>
+                <button type="button" id="cancelar-formulario-movimiento">Cancelar</button>
+            </form>
+        </div>
+
+        <div id="mensaje-error" class="mensaje-error oculto"></div>
+
+        <a href="index.html">Volver a la página principal</a>
+    </div>
+
+    <script src="detalles.js"></script>
+</body>
+</html>

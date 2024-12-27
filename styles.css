@@ -1,0 +1,291 @@
+
+/* Estilo base del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor principal */
+#contenido {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Tarjetas */
+.tarjeta {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+/* Contenedor principal */
+#contenido {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Detalles de la tarjeta */
+#tarjeta-detalles {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tarjeta-detalles p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+#saldo-disponible {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #007b33;
+}
+
+/* Estilo para los movimientos */
+#movimientos-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#movimientos-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#movimientos-list li p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.ingreso {
+    background-color: #d4edda;
+}
+
+.egreso {
+    background-color: #f8d7da;
+}
+
+
+
+
+
+
+#formulario-movimiento label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+#formulario-movimiento input, #formulario-movimiento select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#formulario-movimiento button {
+    background-color: #28a745;
+    color: white;
+}
+
+#formulario-movimiento button[type="button"] {
+    background-color: #dc3545;
+}
+
+#formulario-movimiento button:hover {
+    background-color: #218838;
+}
+
+/* Ocultar el formulario de agregar movimiento */
+.oculto {
+    display: none;
+}
+
+/* Estilos para el tipo de movimiento (entrada/salida) */
+#tipo-movimiento {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 1em;
+    color: #555;
+}
+
+#tipo-movimiento option {
+    padding: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #007b33;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Movimientos */
+#movimientos-list {
+    list-style: none;
+    padding: 0;
+}
+
+#movimientos-list li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#movimientos-list button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#movimientos-list button:hover {
+    background-color: #e41f19;
+}
+
+/* Elementos ocultos */
+.oculto {
+    display: none;
+}
+
+.mensaje-error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Estilo para el botón de eliminar */
+button.eliminar-tarjeta {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Estilo para cuando el mouse pasa por encima del botón */
+button.eliminar-tarjeta:hover {
+    background-color: darkred;
+}
+
+
